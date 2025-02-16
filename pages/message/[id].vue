@@ -67,7 +67,9 @@ sendMessage() {
  
 },
 
-
+mounted() {
+  console.log("Измение проекта");
+}
 }
 
 </script>
