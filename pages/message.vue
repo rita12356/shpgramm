@@ -73,7 +73,7 @@ sendMessage() {
 </script>
 <template>
  
- 
+ <NuxtLink :to="'/'">Главная страница</NuxtLink>
   
  
 
