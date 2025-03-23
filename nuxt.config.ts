@@ -1,3 +1,5 @@
+import { generate } from "@vue/compiler-core";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   
@@ -13,6 +15,10 @@ export default defineNuxtConfig({
 
   css: [ '~/assets/css/bootstrap.min.css'],
   compatibilityDate: '2024-04-03',
+  target: 'static',
+  generate: {
+    fallback: true
+  },
   modules: [],
   
  
