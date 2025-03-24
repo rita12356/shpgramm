@@ -18,11 +18,11 @@ export default defineNuxtConfig({
   target: 'static',
   $production: {
     app: {
-      baseURL: '/messages11/',
+      baseURL: '/shpgramm/message',
     
     },
     router: {
-      base: '/messages11/'
+      base: '/shpgramm/message'
     }
   },
   generate: {
