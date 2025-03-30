@@ -15,16 +15,7 @@ export default defineNuxtConfig({
 
   css: [ '~/assets/css/bootstrap.min.css'],
   compatibilityDate: '2024-04-03',
-  target: 'static',
-  $production: {
-    app: {
-      baseURL: '/shpgramm/'
-    
-    },
-    router: {
-      base: '/shpgramm/'
-    }
-  },
+
   generate: {
     fallback: true
   },
