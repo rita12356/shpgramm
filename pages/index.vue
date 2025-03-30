@@ -35,8 +35,7 @@ if(process.client) {
         
  
   
- <NuxtLink :to="'/message'">Чат с бд</NuxtLink>
-
+ 
 <h1>ЧАТ</h1>
 
 
