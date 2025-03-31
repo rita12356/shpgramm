@@ -16,14 +16,21 @@ export default defineNitroPlugin((nitroApp: NitroApp) => {
 
   io.bind(engine);
 
-  let counter = 0;
+  let messages = [];
+  let users = [];
 
   io.on("connection", (socket) => {
+    socket.emit('initial', messages)
+    socket.on('chat message', function(data) {
+      io.emit('chat message', {
+        text: data.text,
+        username: data.username
+      });
 
-    counter++
-
-    io.emit("hello", counter);
-
+      messages.push(data);
+      console.log(messages)
+    });
+  
 
   });
 
