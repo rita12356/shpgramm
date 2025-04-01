@@ -28,7 +28,7 @@ export default defineNitroPlugin((nitroApp: NitroApp) => {
       });
 
       messages.push(data);
-      console.log(messages)
+      
     });
   
 
