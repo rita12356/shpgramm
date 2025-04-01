@@ -10,7 +10,7 @@ let text = ref('');
 
 
 if(process.client) {
-     socket = io("ws://localhost:3000");
+     socket = io("https://shpgramm.onrender.com/");
     connect.value = true;
     socket.on('initial', (data) => {
       messages.value = data
