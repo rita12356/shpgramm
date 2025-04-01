@@ -17,7 +17,7 @@ if(process.client) {
     });
     socket.on("chat message", (data) => {
         messages.value.push({text: data.text, username: data.username});
-        console.log(data)
+        
       });
     }
 
